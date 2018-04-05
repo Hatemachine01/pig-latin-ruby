@@ -2,7 +2,7 @@ class PigLatin
 
 	def self.translate(word)
 
-		#down cases string for
+		#downases string 
 		word = word.downcase
 
 		vowels = ['a', 'e', 'i', 'o', 'u']
