@@ -2,14 +2,14 @@ class PigLatin
 
 	def self.translate(word)
 
-		#downases string 
+		#downases string to avoid matching errors
 		word = word.downcase
 
 		vowels = ['a', 'e', 'i', 'o', 'u']
 		consonants = ('a'..'z').to_a - vowels
 
 		#checks for words starting with vowels, words starting with "xr" and words starting with "yt"
-		if vowels.include?(word[0]) or ( word[0]== 'x' && word[1] == 'r') or  ( word[0]== 'y' && word[1] == 't')  
+		if vowels.include?(word[0]) or  ['x', 'y'].include?(word[0]) && ['r' , 't'].include?(word[1]) #
 			word << 'ay'
 
 		#checks for two letter words and the I test case
