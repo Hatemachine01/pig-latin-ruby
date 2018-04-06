@@ -1,16 +1,15 @@
 class PigLatin
 
- 
-def self.translate(words)
+ 	def self.translate(words)
 		# This method splits the words on each white space between them, then 
 		#iterates through them and calls the method translator on each of them. 
 		#This allows the code to work on phrases as well as single words 
 		words.split.map { |word| translator(word) }.
 	      join(" ")
-end
+ 	end
 
-def self.translator(word)
-#this method converts the word into pig-latin
+	def self.translator(word)
+		#this method converts the word into pig-latin
 
 		#downcases string to avoid matching errors
 		word = word.downcase
