@@ -34,8 +34,8 @@ class PigLatin
 
 		else
 		#If none of the conditions above were true, the word must then start with a consosant 
-		#(excluding "y") and the consonant is moved to end of the word + "ay" is added to the end of the word. 
-		#If the word starts with a clusters of consosants, these are all moved to the end of the consosant. 
+		#(excluding "y") and the consonant is moved to end of the word + "ay" is added at the end of the word. 
+		#If the word starts with a clusters of consosants, these are all moved to the end of the word. 
 		#Ex, school becomes "oolschay"
 
 		 	word = word + word.slice!(0...(word.index(/[aeiouy]/,1)))+ "ay" 
