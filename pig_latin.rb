@@ -41,7 +41,8 @@ class PigLatin
 
 		 	word = word + word.slice!(0...(word.index(/[aeiouy]/,1)))+"ay" 
 		end
-		 #returns word unchanged
+		
+		#returns word unchanged
 		word
 	end
 end
