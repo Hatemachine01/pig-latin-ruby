@@ -5,7 +5,7 @@ class PigLatin
 		#iterates through them and calls the method translator on each of them. 
 		#This allows the code to work on phrases as well as single words 
 		words.split.map { |word| translator(word) }.
-	      join(" ")
+	    join(" ")
  	end
 
 	def self.translator(word)
