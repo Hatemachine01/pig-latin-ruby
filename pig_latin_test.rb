@@ -59,7 +59,7 @@ class PigLatinTest < Minitest::Test
   end
 
   def test_word_beginning_with_qu_and_a_preceding_consonant
-    skip
+    #skip
     assert_equal "aresquay", PigLatin.translate("square")
   end
 
@@ -94,7 +94,7 @@ class PigLatinTest < Minitest::Test
   end
 
   def test_y_is_treated_like_a_vowel_at_the_end_of_a_consonant_cluster
-    skip
+    #skip
     assert_equal "ythmrhay", PigLatin.translate("rhythm")
   end
 
@@ -104,7 +104,7 @@ class PigLatinTest < Minitest::Test
   end
 
   def test_a_whole_phrase
-    skip
+  
     assert_equal "ickquay astfay unray", PigLatin.translate("quick fast run")
   end
 
